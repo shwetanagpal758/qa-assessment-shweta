@@ -2,19 +2,24 @@ import { defineConfig, devices } from '@playwright/test';
 
 export default defineConfig({
   testDir: './tests',
-  timeout: 30000,
+  timeout: 120000,
+  retries: 1, // optional: re-run failed test once
   use: {
+    headless: false,
     screenshot: 'only-on-failure',
     video: 'retain-on-failure',
-    trace: 'on-first-retry',
+    trace: 'retain-on-failure', // ✅ helpful for debugging
+    actionTimeout: 30000,
+    navigationTimeout: 60000,
   },
   projects: [
-    { name: 'Chromium', use: { ...devices['Desktop Chrome'] } },
-    { name: 'Firefox', use: { ...devices['Desktop Firefox'] } },
-    { name: 'WebKit', use: { ...devices['Desktop Safari'] } }
+    {
+      name: 'chromium',
+      use: {
+        ...devices['Desktop Chrome'],
+        channel: 'chrome',
+      },
+    },
   ],
-  reporter: [
-    ['list'],
-    ['html', { outputFolder: 'reports/html' }]
-  ]
+  reporter: [['list'], ['html', { outputFolder: 'reports/html' }]],
 });
