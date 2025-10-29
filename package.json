@@ -20,6 +20,7 @@
   "homepage": "https://github.com/shwetanagpal758/qa-assessment-shweta#readme",
   "devDependencies": {
     "@playwright/test": "^1.55.0",
+    "@types/node": "^24.9.1",
     "playwright": "^1.55.0",
     "typescript": "^5.9.3"
   }

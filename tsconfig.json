@@ -1,4 +1,3 @@
-
 {
   "compilerOptions": {
     "target": "ES2019",
@@ -8,6 +7,8 @@
     "resolveJsonModule": true,
     "skipLibCheck": true,
     "allowJs": true,
-    "noEmit": true
+    "noEmit": true,
+    "lib": ["ES2019", "DOM"]
   }
 }
+
