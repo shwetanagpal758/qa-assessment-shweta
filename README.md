@@ -82,4 +82,8 @@ npx playwright test tests/auth/logout.spec.ts --project=chromium --headed
 ## Environment Variables 
 export BASE_URL="https://test1.gotrade.goquant.io"
 
+##Report Link##
+https://1drv.ms/b/s!AmEk3faIv1bmxC-B2Zjl9clcSfE8?e=vjOffi
+
+
 
