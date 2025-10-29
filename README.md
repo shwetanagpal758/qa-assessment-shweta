@@ -8,7 +8,7 @@ It validates **Login**, **Logout**, **GoOps**, **Gosettle**, and **Trading Flows
 
 ---
 
-## 🛠 Tech Stack
+##  Tech Stack
 
 | Component | Description |
 |------------|-------------|
@@ -55,7 +55,7 @@ qa-assessment-shweta/
 
 ---
 
-## ⚙️ Installation & Setup
+##  Installation & Setup
 
 ### 1️ Prerequisites
 - Node.js v18 or higher
